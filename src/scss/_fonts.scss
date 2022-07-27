@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "Noto Sans";
+  src: local("Noto Sans"), local("Noto Sans"),
+    url("../../assets/fonts/NotoSans/NotoSans.woff2") format("woff2"),
+    url("../../assets/fonts/NotoSans/NotoSans.woff") format("woff"),
+    url("../../assets/fonts/NotoSans/NotoSans.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: local("Noto Sans"), local("Noto Sans"),
+    url("../../assets/fonts/NotoSans/noto-sans-v26-latin-500.woff2") format("woff2"),
+    url("../../assets/fonts/NotoSans/noto-sans-v26-latin-500.woff") format("woff"),
+    url("../../assets/fonts/NotoSans/noto-sans-v26-latin-500.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Noto Sans";
+  src: local("Noto Sans"), local("Noto Sans"),
+    url("../../assets/fonts/NotoSans/noto-sans-v26-latin-700.woff2") format("woff2"),
+    url("../../assets/fonts/NotoSans/noto-sans-v26-latin-700.woff") format("woff"),
+    url("../../assets/fonts/NotoSans/noto-sans-v26-latin-700.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"), local("Montserrat"),
+    url("../../assets/fonts/Monserrat/Montserrat-Bold.woff2") format("woff2"),
+    url("../../assets/fonts/Monserrat/Montserrat-Bold.woff") format("woff"),
+    url("../../assets/fonts/Monserrat/Montserrat-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../../assets/fonts/Roboto/roboto-v29-latin-500.woff2") format("woff2"); 
+  src: local(""), url("../../assets/fonts/Roboto/roboto-v29-latin-500.woff") format("woff"),
+    url("../../assets/fonts/Roboto/roboto-v29-latin-500.ttf")
+      format("truetype"); 
+}
+
+@font-face {
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+  src: url("../../assets/fonts/Roboto/roboto-v29-latin-700.woff2") format("woff2"); 
+  src: local(""), url("../../assets/fonts/Roboto/roboto-v29-latin-700.woff") format("woff"),
+     url("../../assets/fonts/roboto-v29-latin-700.ttf")
+      format("truetype"); 
+}
+
+@font-face {
+    font-family: "Avenir";
+    src: local("Avenir"),
+      url("../../assets/fonts/Avenir/Avenir-Regular.woff2") format("woff2"),
+      url("../../assets/fonts/Avenir/Avenir-Regular.woff") format("woff"),
+      url("../../assets/fonts/Avenir/Avenir-Regular.ttf") format("truetype");
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: "Avenir";
+    src: local("Avenir"),
+      url("../../assets/fonts/Avenir/avenir-medium.woff2") format("woff2");
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+  }

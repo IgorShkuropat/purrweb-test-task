@@ -1,0 +1,252 @@
+.QR-code {
+  height: 2113px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-image: url("/assets/img/QR-code/desktopBG@1x.png");
+  background-position: 0 0;
+  background-size: contain;
+  background-repeat: no-repeat;
+  @media screen and (max-width: 1380px) {
+    height: fit-content;
+  }
+  @media screen and (max-width: 1100px) {
+    background-image: none;
+  }
+
+  &__top-container {
+    display: flex;
+    gap: 80px;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 42px;
+    @media screen and (max-width: 1100px) {
+      flex-direction: column;
+      gap: 34px;
+    }
+    @media screen and (max-width: $mobile) {
+      margin-bottom: 130px;
+      height: auto;
+    }
+  }
+
+  &__article-container {
+    display: flex;
+    flex-direction: column;
+    gap: 58px;
+    @include adaptiv-value("gap", 58, 50);
+    max-width: 376px;
+    padding-top: 537px;
+    margin-left: 195px;
+    @include adaptiv-value("margin-left", 195, 0);
+    @media screen and (max-width: 1100px) and (min-width: $mobile) {
+      padding-top: 300px;
+      background-image: url("/assets/img/QR-code/responsiveBG.png");
+      background-repeat: no-repeat;
+      background-position: -1px 0;
+      background-size: 100% 120%;
+      max-width: none;
+      width: 100%;
+      margin-left: 0px;
+    }
+    @media screen and (max-width: $mobile) {
+      gap: 50px;
+      width: 100%;
+      max-width: none;
+      margin-left: 0px;
+      padding-top: 227px;
+      background-image: url("/assets/img/QR-code/mobileBG--dj.png");
+      background-position: 0px 0;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  &__article {
+    max-width: 315px;
+    @media screen and (max-width: 1100px) {
+      margin-left: 15px;
+    }
+  }
+
+  &__download-links {
+    width: 100%;
+    display: flex;
+    @media screen and (max-width: 1100px) and (min-width: $mobile) {
+      max-width: 330px;
+      padding: 0 15px;
+    }
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
+  &__order-phone-container {
+    display: flex;
+    gap: 80.44px;
+    @media screen and (max-width: 1380px) {
+      flex-direction: column;
+      gap: 50px;
+      align-items: center;
+    }
+    @media screen and (max-width: 1100px) {
+      background-image: url("/assets/img/QR-code/mobileBG--cocktail.png");
+      background-position: 33px 0;
+      background-size: contain;
+      background-repeat: no-repeat;
+    }
+  }
+  &__order-phone1 {
+    margin-top: 220px;
+    min-width: 281px;
+    @include adaptiv-value("width", 333, 281);
+    min-width: 281px;
+    @media screen and (max-width: 1100px) {
+      margin-top: 240px;
+      width: 281px;
+    }
+  }
+  &__order-phone2 {
+    align-self: flex-end;
+    @include adaptiv-value("width", 333, 281);
+    min-width: 281px;
+    @media screen and (max-width: 1100px) {
+      align-self: center;
+      width: 281px;
+    }
+  }
+
+  &__bottom-container {
+    width: 100%;
+    display: flex;
+    align-self: center;
+    flex-direction: column;
+    @media screen and (max-width: $mobile) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  &__demonstration {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    background-image: url("/assets/img/QR-code/noTabBG.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 767px;
+    @include adaptiv-value("height", 767, 641);
+    width: 100%;
+    @media screen and (max-width: 535px) {
+      height: 641px;
+      align-items: flex-start;
+      background-size: contain;
+      background-position: 0 194px;
+      justify-content: center;
+    }
+    &-picture {
+      @include adaptiv-value("width",332.56,181.58);
+      @include adaptiv-value("height",667.15,364.28);
+      @media screen and (max-width: 535px) {
+        margin-top: 70px;
+        width: 181.58px;
+        height: 364.28px;
+      }
+    }
+  }
+  &__glow-bg {
+    position: absolute;
+    width: 1031px;
+    height: 961px;
+    z-index: -999;
+    left: 14.79%;
+    right: 14.2%;
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    opacity: 0.15;
+    filter: blur(150px);
+    border-radius: 476px;
+    transform: rotate(-0.55deg);
+    @include adaptiv-value("width", 1031, 309);
+    @include adaptiv-value("height", 961, 288);
+    @media screen and (max-width: $mobile) {
+      filter: blur(80px);
+      width: 309px;
+      height: 288px;
+      left: 35px;
+      top: 122px;
+      opacity: 0.3;
+    }
+  }
+  &__arrow {
+    position: absolute;
+    top: 224px;
+    left: 65.6%;    
+    @media screen and(max-width: 860px) {
+      width: 85px;
+      top: 78.2%;
+      transform: rotate(30deg);
+    }
+    @media screen and(max-width: $mobile) {
+      top: 400px;
+      left: 300px;
+      
+      
+    }
+
+    &::after {
+      content: "Scan QR-code";
+      font-family: Montserrat;
+      font-weight: 700;
+      font-size: 21px;
+      line-height: 26px;
+      position: absolute;
+      width: 155px;
+      height: 50px;
+      top: 86px;
+      left: 80px;
+      color: $textColor;
+      @media screen and(max-width: 860px) {
+        transform: rotate(-30deg);
+        width: 133px;
+        height: 22px;
+        top: 102px;
+        left: -18px;
+        font-size: 18px;
+        line-height: 22px;
+      }
+      @media screen and(max-width: $mobile) {
+ 
+      }
+    }
+  }
+
+  &__article--generate {
+    align-self: center;
+    justify-content: space-between;
+    display: flex;
+    width: 85.5%;
+    @media screen and(max-width: 757px) {
+      flex-direction: column;
+      width: 315px;
+    }
+    @media screen and(max-width: $mobile) {
+      align-self: flex-start;
+      padding-left: 15px;
+    }
+  }
+
+  &__title--generate {
+    width: 381px;
+    @include adaptiv-value("width",381,310);
+    @media screen and(max-width: $mobile) {
+      width: 310px;
+    }
+  }
+
+  &__subtitle--generate {
+    width: 292px;
+    @include adaptiv-value("width",292,324);
+    @media screen and(max-width: $mobile) {
+      width: 324px;
+    }
+  }
+}

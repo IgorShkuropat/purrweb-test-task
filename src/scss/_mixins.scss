@@ -1,0 +1,12 @@
+@mixin adaptiv-value($property, $startSize, $minSize) {
+    @media screen and (max-width: 1450px){
+        $addSize: $startSize - $minSize;
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / (1450 - 375)))
+
+    }
+}
+
+@mixin adaptiv-value--noMQ($property, $startSize, $minSize) {
+        $addSize: $startSize - $minSize;
+        #{$property}: calc(#{$minSize + px} + #{$addSize} * ((100vw - 375px) / (1450 - 375)))
+}

@@ -1,0 +1,65 @@
+.ordering {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  margin-top: 192px;
+  @include adaptiv-value("margin-top", 192, 0);
+  @media screen and (max-width: $mobile) {
+    padding-bottom: 29px;
+  }
+
+  &__glow {
+    position: absolute;
+    right: -10%;
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    transform: rotate(5.78deg);
+    width: 426.21px;
+    @include adaptiv-value("width", 426, 283);
+    height: 438.35px;
+    @include adaptiv-value("height", 438, 300);
+    filter: blur(100px) opacity(0.2);
+  }
+  &__article {
+    align-self: flex-end;
+    margin-right: 11.1%;
+    @media screen and (max-width: $mobile) {
+      align-self: flex-start;
+      padding-left: 15px;
+      margin-bottom: 145px;
+    }
+  }
+
+  &__title {
+  }
+
+  &__subtitle {
+  }
+
+  &__bottom-container {
+    display: flex;
+    position: relative;
+    align-self: center;
+    @media screen and (max-width: $mobile) {
+        align-self: flex-start;
+      }
+  }
+
+  &__phone {
+    & img,
+    & source {
+      width: 868px;
+      height: 1038.21px;
+      @include adaptiv-value("width", 868, 360);
+      @include adaptiv-value("height", 1038.21, 430);
+    }
+  }
+  &__frames {
+    position: absolute;
+    top: 23.5%;
+    
+    @media screen and (max-width: $mobile) {
+        top: -16%;
+        left: 40px;
+      }
+  }
+}

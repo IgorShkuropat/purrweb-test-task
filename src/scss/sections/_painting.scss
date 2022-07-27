@@ -1,0 +1,14 @@
+.painting {
+    position: relative;
+    z-index: -5;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(/assets/img/painting/notabBG.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: cover;
+    height: 937px;
+    &__phone {
+    }
+}

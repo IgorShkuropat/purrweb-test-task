@@ -1,0 +1,160 @@
+.violet-ellipse {
+  position: absolute;
+  height: 783px;
+  width: 662px;
+  left: -50px;
+  top: -200px;
+  z-index: -1;
+  @include adaptiv-value("height", 783, 430);
+  @include adaptiv-value("width", 662, 364);
+  background-color: $violetElipsBg;
+  filter: blur(130px);
+  transform: rotate(-105.26deg) skew(-27deg, 0deg);
+  @media screen and (max-width: $mobile) {
+    background-color: $violetElipsBgMobile;
+    top: 0px;
+    left: -50px;
+  }
+}
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  &__top-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 74.2px;
+    height: 100%;
+    @media screen and (max-width: $mobile) {
+      padding-bottom: 0px;
+    }
+  }
+  &__left-container {
+    padding: 0 15px;
+    margin-top: 143px;
+    @include adaptiv-value("margin-top", 143, 98.31);
+    @media screen and (max-width: $mobile) {
+      justify-content: normal;
+      margin-top: 0px;
+      padding-top: 110px;
+      padding-right: 0px;
+      flex: 1 0 auto;
+      position: relative;
+    }
+  }
+
+  &__right-container {
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    max-width: 100%;
+    max-height: 100%;
+    @media screen and (max-width: $mobile) {
+      width: 100px;
+    }
+  }
+
+  &__blue-ellipse {
+    z-index: -1;
+    position: absolute;
+    background: $blueElipsBg;
+    border-radius: 50%;
+    width: 7.8125rem;
+    height: 7.8125rem;
+    left: 0rem;
+    top: 470px;
+    @include adaptiv-value("top", 470, 300);
+    filter: blur(45px);
+    @media screen and (max-width: $mobile) {
+      left: -1rem;
+      top: 16.375rem;
+    }
+  }
+
+  &__subtitle {
+    position: relative;
+    margin-top: 114px;
+    margin-left: 105px;
+    @include adaptiv-value("margin-top", 114, 24);
+    @include adaptiv-value("margin-left", 105, 0);
+    &::before {
+      content: "";
+      position: absolute;
+      width: 8.7144rem;
+      height: 0px;
+      background-color: $textColor;
+      border: 0.125rem solid #fff;
+      transform: rotate(120.61deg);
+      left: -8.125rem;
+      top: 2.5rem;
+      @media screen and (max-width: 1300px) {
+        display: none;
+      }
+    }
+  }
+
+  &__phone {
+    position: relative;
+    margin-right: 21px;
+    box-shadow: 0px 0px 110px rgba(255, 255, 255, 0.05);
+    border-radius: 35px;
+    @media screen and (max-width: $mobile) {
+      top: 65.31px;
+      width: 160px;
+      margin-right: 0px;
+      height: 321px;
+      border-radius: 0px;
+      // left: 55px;
+    }
+    & > img {
+      object-fit: contain;
+      max-width: 332.88px;
+      max-height: 667.8px;
+      @include adaptiv-value("max-width", 332.88, 161);
+      @include adaptiv-value("max-height", 667.8p, 322.99);
+    }
+  }
+
+  &__bottom-container {
+    width: 100%;
+    max-width: 1250px;
+    align-self: flex-start;
+    // padding: 0 15px;
+
+    display: flex;
+    @include adaptiv-value("margin-top", 74.2, 113);
+    @media screen and (max-width: 757px) {
+      flex-direction: column;
+    }
+    @media screen and (max-width: 757px) and (min-width: $mobile) {
+      gap: 25px;
+    }
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.call-to-action {
+  &__call-container {
+  }
+
+  &__call {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 35px;
+    @include adaptiv-value("font-size", 35, 24);
+    line-height: 70px;
+    @include adaptiv-value("line-height", 70, 29);
+    color: $textColor;
+  }
+
+  &__links-container {
+    display: flex;
+    @media screen and (max-width: $mobile) {
+      flex-direction: column;
+      margin-top: 34px;
+    }
+  }
+}
+

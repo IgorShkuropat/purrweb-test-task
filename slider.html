@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"
+    />
+    <link rel="stylesheet" href="src/scss/slider/css/styles.css" />
+    <title>Slider</title>
+  </head>
+  <body>
+    <div class="slider">
+      <div class="slider__wrapper">
+        <button
+          id="prev-button"
+          class="slider__button prev"
+        >
+          <img class="slider__button--left" src="assets/img/slider/rightArrow.svg" alt="leftArrow" />
+        </button>
+
+        <div class="slider__track-container">
+          <div id="track" class="slider__track">
+              <img class="slider__image slider__slide current-slide" src="assets/img/slider/slide1.jpg" alt="slide" />
+              <img class="slider__image slider__slide" src="assets/img/slider/slide2.jpg" alt="slide" />
+              <img class="slider__image slider__slide" src="assets/img/slider/slide3.jpg" alt="slide" />
+              <img class="slider__image slider__slide" src="assets/img/slider/slide4.jpg" alt="slide" />
+              <img class="slider__image slider__slide" src="assets/img/slider/slide5.jpg" alt="slide" />
+          </div>
+        </div>
+        <button id="next-button" class="slider__button next">
+          <img src="assets/img/slider/rightArrow.svg" alt="rightArrow" />
+        </button>
+      </div>
+
+      <div class="slider__nav">
+        <button class="slider__indicator current-slide"></button>
+        <button class="slider__indicator"></button>
+        <button class="slider__indicator"></button>
+        <button class="slider__indicator"></button>
+        <button class="slider__indicator"></button>
+      </div>
+    </div>
+
+    <script type="module" src="src/scripts/slider.js"></script>
+  </body>
+</html>

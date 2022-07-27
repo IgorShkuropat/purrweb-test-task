@@ -1,0 +1,132 @@
+.footer {
+  padding-top: 168.58px;
+  @include adaptiv-value("padding-top", 168.58,35);
+  position: relative;
+
+  &__container {
+    margin: 0 auto;
+    width: 86.18%;
+    display: flex;
+    justify-content: space-between;
+    @media screen and (max-width: $mobile) {
+        flex-direction: column-reverse;
+        gap: 58.31px;
+        align-items: center;
+        margin-bottom: 24px;
+    }
+  }
+
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width: $mobile) {
+        align-items: center;
+    }
+  }
+  &__contacts-container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    @media screen and (max-width:$mobile){
+
+        display: flex;
+        align-items: center;
+        margin: 17.14px 0 9px 0;
+    }
+  }
+
+  &__glow {
+    position: absolute;
+    left: -5%;
+    top: -5%;
+    z-index: -100;
+    width: 406px;
+    @include adaptiv-value("width", 406, 224.67);
+    height: 411px;
+    @include adaptiv-value("height", 411,227.77);
+    filter: blur(100px) opacity(0.3);
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    transform: rotate(5.78deg);
+    @media screen and (max-width: $mobile) {
+        top: 35%;
+        left: -25%;
+    }
+  }
+
+  &__logo {
+    
+  }
+
+  &__contact {
+    margin-top: 16.18px;
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+
+    color: #ffffff;
+    @media screen and (max-width: $mobile) {
+        text-align: center;
+        margin: 0;
+    }
+  }
+
+  &__email {
+    margin-bottom: 19.15px;
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    
+    @media screen and (max-width: $mobile) {
+        margin: 0;
+    }
+    color: #ffffff;
+  }
+
+  &__copyright {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    color: #ffffff;
+  }
+
+  &__documents-links {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__terms {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    // text-align: right;
+
+    color: #ffffff;
+  }
+
+  &__policy {
+    font-family: "Avenir";
+    font-style: normal;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 25px;
+    /* identical to box height */
+
+    // text-align: right;
+
+    color: #ffffff;
+  }
+}

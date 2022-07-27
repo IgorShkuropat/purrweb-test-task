@@ -1,0 +1,207 @@
+.get-in-touch {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  @media screen and (max-width: $mobile) {
+    margin-top: 147px;
+  }
+
+  &__glow1 {
+    width: 247.04px;
+    height: 250.45px;
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    filter: blur(100px) opacity(0.3);
+    position: absolute;
+    left: 23.05%;
+    top: 0;
+    z-index: -4;
+    transform: rotate(5.78deg);
+    @media screen and (max-width: 660px) {
+      z-index: -500;
+      left: -15%;
+    }
+  }
+  &__glow2 {
+    width: 336.78px;
+    height: 341.42px;
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    filter: blur(100px) opacity(0.3);
+    position: absolute;
+    right: -10%;
+    transform: rotate(5.78deg);
+    top: 59%;
+    z-index: -2;
+    @media screen and (max-width: 660px) {
+      right: -30%;
+      top:65%;
+    }
+  }
+  &__article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 82px;
+    @include adaptiv-value("margin-bottom", 82, 49);
+    @media screen and (min-width: 420px) {
+      & > p:nth-child(3) {
+        margin-top: 0;
+      }
+    }
+  }
+  &__title {
+  }
+
+  &__subtitle {
+    // max-width: 580px;
+    text-align: center;
+  }
+
+  &__form {
+    position: relative;
+    width: 818px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    gap: 23px;
+    @include adaptiv-value("gap", 23, 16);
+    @include adaptiv-value("width", 818, 345);
+  }
+
+  &__input {
+    font-family: Noto Sans, serif;
+    font-size: 18px;
+    width: 100%;
+    height: 83px;
+    background: #ffffff;
+    border: 1px solid #5c5c5c;
+    border-radius: 10px;
+    padding-left: 23px;
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      font-family: Noto Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: #bfbfbf;
+    }
+  }
+
+  &__button {
+    position: relative;
+    z-index: 1;
+    width: 398px;
+    @include adaptiv-value("width", 398,345);
+    height: 80px;
+    background: #000000;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    align-self: center;
+    margin-top: 37px;
+    cursor: pointer;
+    & span {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 29px;
+      color: $textColor;
+    }
+  }
+
+  &__cities {
+    display: flex;
+    gap: 24px;
+    @media screen and (max-width:$mobile) {
+      flex-direction: column;
+      gap: 16px;
+      
+    }
+  }
+
+  &__textarea {
+    resize: none;
+    width: 100%;
+    font-family: Noto Sans, serif;
+    font-size: 18px;
+    background: #ffffff;
+    border: 1px solid #5c5c5c;
+    border-radius: 10px;
+    height: 199px;
+    padding-left: 23px;
+    padding-top: 26px;
+    &::placeholder {
+      font-family: Noto Sans;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 18px;
+      line-height: 25px;
+      color: #bfbfbf;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+&__call-container p{
+  @media screen and (max-width: $mobile) {
+    width: 295px;
+  }
+}
+  &__call-to-action {
+    position: relative;
+    z-index: 500;
+    margin-top: 91px;
+    width: 610.13px;
+    @include adaptiv-value("width",610,270);
+    display: flex;
+    flex-direction: column;
+    gap: 32.73px;
+    @include adaptiv-value("gap", 32.73, 45);
+    & p {
+      font-size: 24px;
+      line-height: 33px;
+      text-align: center;
+      letter-spacing: 0.03em;
+    }
+    @media screen and (max-width: 660px) {
+      // height: 190px;
+    }
+  }
+  &__links-container {
+    width: 100%;
+    height: 81.27px;
+    // height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-self: flex-end;
+    align-items: flex-end;
+    gap: 59px;
+    @include adaptiv-value("gap",59,24);
+    @media screen and (max-width: 660px) {
+      flex-direction: column;
+      height: 144px;
+      align-items: center;
+    }
+    & a{
+      height: 100%;
+      &  img {
+        height: 100%;
+        @media screen and (max-width: $mobile) {
+          position: relative;
+          z-index: 500;
+          height: 60px;
+          width: 185px;
+        }
+      }
+    }
+  }
+}
+.invalid {
+  border: 2px solid #ff0000;
+}

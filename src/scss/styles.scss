@@ -1,0 +1,182 @@
+@import "_variables";
+@import "_fonts";
+@import "_reset";
+@import "_mixins";
+@import "_cookies";
+@import "sections/_hero";
+@import "sections/_our-mission";
+@import "sections/_id-scanner";
+@import "sections/_BITool";
+@import "sections/_QR-code";
+@import "sections/_ordering";
+@import "sections/painting";
+@import "sections/get-in-touch";
+@import "sections/_footer";
+
+body {
+  background-color: $blackBg;
+  overflow-x: hidden;
+}
+a {
+  text-decoration: none;
+  color: $textColor;
+}
+.wrapper {
+  position: relative;
+  max-width: 90.625rem;
+  margin: 0 auto;
+
+}
+
+.overflow-wrapper--mobile{
+  @media screen and(max-width: $medium) {
+    overflow: hidden;
+  }
+}
+
+.container {
+  max-width: 78.125rem;
+}
+.display-desktop {
+  @media screen and (max-width: $mobile) {
+    display: none;
+  }
+}
+.display-mobile {
+  @media screen and (min-width: 421px) {
+    display: none;
+  }
+}
+.login {
+  position: relative;
+  &:after {
+    content: "";
+    display: block;
+    height: 1px;
+    max-width: 50px;
+    background: $textColor;
+  }
+}
+.header {
+  margin-top: 23px;
+  @include adaptiv-value("margin-top", 23, 40);
+  display: flex;
+  align-items: center;
+  gap: 6.75rem;
+  @media screen and (max-width: $mobile) {
+    padding: 0 15px;
+    gap: 0;
+    justify-content: space-between;
+  }
+  &__logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    @include adaptiv-value("gap", 8, 3.8704);
+  }
+
+  &__cube {
+    width: 107px;
+    height: 109px;
+    @include adaptiv-value("width", 107, 51.73);
+    @include adaptiv-value("height", 109, 52.69);
+  }
+  &__title {
+    width: 96px;
+    height: 24.75px;
+    @include adaptiv-value("height", 24.75, 11.96);
+    @include adaptiv-value("width", 96, 46.41);
+  }
+  &__login {
+    display: flex;
+    gap: 0.875rem;
+    @media screen and (max-width: $mobile) {
+      gap: 0;
+    }
+  }
+
+  &__login-button {
+    border: none;
+    background-color: transparent;
+    padding: 0;
+  }
+
+  &__login-button-text {
+    position: relative;
+    font-family: "Noto Sans";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: $textColor;
+    @include adaptiv-value("font-size", 18, 14);
+    @include adaptiv-value("line-height", 25, 19);
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+.title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 51px;
+  @include adaptiv-value("font-size", 51, 24);
+  line-height: 62px;
+  @include adaptiv-value("line-height", 62, 29);
+  color: $textColor;
+}
+.title--h1 {
+  line-height: 62px;
+  font-size: 4rem;
+  max-width: 643px;
+  @include adaptiv-value("max-width", 643, 207);
+  @include adaptiv-value("font-size", 64, 32);
+  @include adaptiv-value("line-height", 62, 40);
+}
+.subtitle--hero {
+  max-width: 380px;
+  @include adaptiv-value("max-width", 380, 250  );
+  font-family: "Noto Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  @include adaptiv-value("font-size", 20, 16);
+  line-height: 27px;
+  @include adaptiv-value("line-height", 27, 22);
+  color: $textColor;
+}
+
+.download-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 28px;
+  // fix
+  @include adaptiv-value("gap", 28, 24);
+  &__link-to-AppStore {
+  }
+  &__link-to-GooglePlay {
+
+  }
+
+  &__AppStore-img {
+    // fix
+    min-width: 163.53px;
+    @include adaptiv-value("min-width", 163.53, 185);
+  }
+  &__GooglePlay-img {
+    min-width: 163.53px;
+    @include adaptiv-value("min-width", 163.53, 185);
+  }
+}
+
+.hover{
+  &:hover{
+    filter: brightness(0.8);
+  }
+}
+
+

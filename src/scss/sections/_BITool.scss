@@ -1,0 +1,41 @@
+.BITool {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 208px;
+  @media screen and(max-width: 1220px) {
+    flex-direction: column;
+    margin-bottom: 208px;
+  }
+  @media screen and(max-width: $mobile) {
+    flex-direction: column;
+    margin-bottom: 35px;
+  }
+  &__glow-bg{
+    position: absolute;
+    top: -50px;
+    left: -50px;
+    background: linear-gradient(12.08deg, #f101bf 2.82%, #0066ff 97.06%);
+    transform: rotate(5.78deg);
+    width: 426.21px;
+    @include adaptiv-value("width", 426, 283);
+    height: 438.35px;
+    @include adaptiv-value("height", 438, 300);
+    filter: blur(100px) opacity(0.2);
+    z-index: -1;
+  }
+  &__article {
+    position: relative;
+    padding-top: 100px;
+    width: 497px;
+    @include adaptiv-value("width", 497, 338);
+    @media screen and(max-width: 1220px) {
+      padding-left: 15px;
+      padding-top: 0px;
+    }
+  }
+
+  &__subtitle {
+    width: 395px;
+    @include adaptiv-value("width", 497, 338);
+  }
+}
